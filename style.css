@@ -1,0 +1,132 @@
+body{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px white;
+    padding: 20px;
+}
+.border-line{
+    box-shadow: 0px 2px 10px white;
+    clip-path: inset(0px 0px -10px 0px);
+}
+.box-body{
+    display: flex;
+    align-items: center;
+    width: 560px;
+    margin: auto;
+    padding: 40px;
+}
+.allbox{
+    font-size: 30px;
+    margin: 10px;
+}
+.box{
+    width: 90px;
+    height: 90px;
+    background-color: #1b1b1b;
+    border: 1px solid coral;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+.small-box{
+    width: 40px;
+    height: 40px;
+}
+.input-box{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border: 1px solid coral;
+    border-radius: 6px;
+    background: #1b1b1b;
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+}
+.equal{
+    font-size: 50px;
+}
+.btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.btn:hover{
+    background-color: rgb(245, 95, 41);
+}
+.btn:active{
+    outline: 1px solid white;
+}
+
+.popup-wrapper {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    inset: 0;
+    overflow: auto;
+    background-color: rgb(27, 27, 27, 0.5);
+    display: none;
+    justify-content: center;
+}
+
+.popup-wrapper.show{
+    display: flex;
+}
+
+.popup {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    max-width: 400px;
+    max-height: 200px;
+    margin-block: 50px;
+    transform: translateY(-100%);
+    background-color: #1b1b1b;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow-y: auto;
+    animation: slideIn 300ms linear forwards;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-block: 30px;
+}
+
+.popup .popup-close-btn {
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: red;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}

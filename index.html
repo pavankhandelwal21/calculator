@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="heading">
+        <span class="heading border-line">Answer 10 questions to win the game  &nbsp; &nbsp;<span id="total"></span></span>
+    </div>
+    <div class="box-body">
+        <div id="LHS" class="box allbox">23</div>
+        <div id="operator" class="small-box allbox box">+</div>
+        <div id="RHS" class="box allbox">46</div>
+        <span class="equal">=</span>
+        <input type="number" id="users-input" class="input-box allbox">
+    </div>
+    <div>
+        <button class="btn" id="btn">Check and go to next question</button>
+    </div>
+
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close-btn" onclick="hidePopup()">&times;</div>
+            <h2 id="dyn-msg"></h2>
+        </div>
+    </div>
+<script src="/script.js"></script>
+</body>
+</html>
